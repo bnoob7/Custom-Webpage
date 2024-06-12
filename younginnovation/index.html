@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>catalog</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="./assets/Company logo (1).png" alt="catalog" />
+          </div>
+          <div class="links">
+            <ul>
+              <a href=""><li>Home</li></a>
+              <a href=""><li>About Us</li></a>
+              <a href=""><li>Case Studies</li></a>
+              <a href=""
+                ><li class="list" onclick="toggleSublist(event)">
+                  Resources <i class="fa-solid fa-caret-down dropdown"></i>
+                  <ul class="sublist">
+                    <a href=""
+                      ><li>
+                        <div class="logo">
+                          <img src="./assets/book.png" alt="" />
+                        </div>
+                        <div class="content">
+                          <h4>Blog</h4>
+                          <p>The latest industry news, updates and info.</p>
+                        </div>
+                      </li></a
+                    >
+
+                    <a href=""
+                      ><li>
+                        <div class="logo">
+                          <img src="./assets/zap.png" alt="" />
+                        </div>
+                        <div class="content">
+                          <h4>Customer Stories</h4>
+                          <p>Learn how our customers are making big changes.</p>
+                        </div>
+                      </li></a
+                    >
+
+                    <a href=""
+                      ><li>
+                        <div class="logo">
+                          <img src="./assets/play-circle.png" alt="" />
+                        </div>
+                        <div class="content">
+                          <h4>Video Tutorials</h4>
+                          <p>
+                            Get up and running on new features and techniques.
+                          </p>
+                        </div>
+                      </li></a
+                    >
+                  </ul>
+                </li></a
+              >  
+            </ul>
+          </div>
+          <button type="button" class="hambar jsButton" onclick="toggleHambar()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <script>
+            function toggleHambar() {
+              var links = document.querySelector('.links');
+              links.style.display = (links.style.display === 'none' || links.style.display === '') ? 'block' : 'none';
+            }
+            </script>
+        </div>
+        <button type="button" class="searchbar jsButton"  onclick="toggleSearchInput()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <script>
+          function toggleSearchInput() {
+            var searchContainer = document.querySelector('.search-container');
+            searchContainer.style.display = (searchContainer.style.display === 'none' || searchContainer.style.display === '') ? 'block' : 'none';
+          }
+          </script>
+      </div>
+    </header>
+
+    <main class="hero">
+      <div class="container">
+        <div class="search-container">
+          <i class="fa-solid fa-search"></i>
+          <input type="text" class="search-input" placeholder="Search">
+      </div>
+      
+        <div class="content">
+          <h1>Beautiful analytics to grow smarter</h1>
+          <p>
+            Powerful, self-serve product and growth analytics to help you
+            convert, engage, <br />
+            and retain more users. Trusted by over 4,000 startups.
+          </p>
+          <a href=""
+            ><button>
+              Why Catalog?<i class="fa-solid fa-arrow-right arrow"></i></button
+          ></a>
+        </div>
+      </div>
+    </main>
+
+    <section class="features">
+      <div class="container">
+        <div class="feature-content">
+          <h2>Campaigns</h2>
+          <p>
+            We aim to stop public funds siphoning off and we have a plan that
+            will help. <br />We are working at the national and EU levels to
+            advance.
+          </p>
+        </div>
+        <div class="box-wrapper">
+          <a href="" class="box box1">
+            <div class="img-wrapper">
+              <img src="./assets/box1.png" alt="card image" />
+            </div>
+
+            <div class="content">
+              <h4>Open Data Directive</h4>
+              <p>
+                In view of Russia’s military action against the Ukrainian
+                people, being concerned about ensuring that European funds In
+                view of Russia’s military action against the Ukrainian people,
+              </p>
+              <div class="button-wrapper">
+                <button>
+                  <span>learnmore</span
+                  ><i class="fa-solid fa-arrow-right arrow"></i>
+                </button>
+              </div>
+            </div>
+          </a>
+          <a href="" class="box box2">
+            <div class="img-wrapper">
+              <img src="./assets/box2.png" alt="card image" />
+            </div>
+
+            <div class="content">
+              <h4>Beneficial Ownership</h4>
+              <p>
+                In view of Russia’s military action against the Ukrainian
+                people, being concerned about ensuring that European funds In
+                view of Russia’s military action against the Ukrainian people,
+              </p>
+              <div class="button-wrapper">
+                <button>
+                  <span>learnmore</span
+                  ><i class="fa-solid fa-arrow-right arrow"></i>
+                </button>
+              </div>
+            </div>
+          </a>
+          <a href="" class="box box3">
+            <div class="img-wrapper">
+              <img src="./assets/box3.png" alt="card image" />
+            </div>
+
+            <div class="content">
+              <h4>EU Recovery Transparency</h4>
+              <p>
+                In view of Russia’s military action against the Ukrainian
+                people, being concerned about ensuring that European funds In
+                view of Russia’s military action against the Ukrainian people,
+              </p>
+              <div class="button-wrapper">
+                <button>
+                  <span>learnmore</span
+                  ><i class="fa-solid fa-arrow-right arrow"></i>
+                </button>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="identity features">
+      <div class="container">
+        <div class="box">
+          <a href="#" class="content">
+            <h2>Who we are</h2>
+            <p>
+              We are a collaboration of Non Govt. and professionals working to
+              ensure that government spending is done fairly, openly,
+              efficiently, and creates the best value for money and best
+              outcomes for Europe. We are working at the national and EU levels
+              to advance the principles of openness in spending of funds,
+              procurement, and company ownership within the EU.
+            </p>
+            <div class="button-wrapper">
+              <button>
+                <span>See more</span
+                ><i class="fa-solid fa-arrow-right arrow"></i>
+              </button>
+            </div>
+          </a>
+          <div class="images">
+            <div class="column column1">
+              <div class="image-wrapper">
+                <img src="./assets/Image1.png" alt="" />
+                <p class="name">Adriana Homolova</p>
+              </div>
+              <div class="image-wrapper">
+                <img src="./assets/Image2.png" alt="" />
+                <p class="name">Karolis Granickas</p>
+              </div>
+            </div>
+            <div class="column column2">
+              <div class="image-wrapper">
+                <img src="./assets/Image3.png" alt="" />
+                <p class="name">Sandor Lederer</p>
+              </div>
+              <div class="image-wrapper">
+                <img src="./assets/Image4.png" alt="" />
+                <p class="name">Lady Madonna</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sponsers">
+      <div
+        class="container scroller"
+        data-direction="right"
+        data-animated="true"
+        data-speed="fast"
+      >
+        <div class="tag-list scroller__inner">
+          <img src="./assets/layers.png" alt="" />
+          <img src="./assets/quotent.png" alt="" />
+          <img src="./assets/sisyphus.png" alt="" />
+          <img src="./assets/hourglass.png" alt="" />
+          <img src="./assets/circooles.png" alt="" />
+          <img aria-hidden="true" src="./assets/layers.png" alt="" />
+          <img aria-hidden="true" src="./assets/quotent.png" alt="" />
+          <img aria-hidden="true" src="./assets/sisyphus.png" alt="" />
+          <img aria-hidden="true" src="./assets/hourglass.png" alt="" />
+          <img aria-hidden="true" src="./assets/circooles.png" alt="" />
+          
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="news features">
+      <div class="container">
+        <div class="feature-content">
+          <h2>News</h2>
+          <p>
+            We aim to stop public funds siphoning off and we have a plan that
+            will help.<br />
+            We are working at the national and EU levels to advance.
+          </p>
+        </div>
+
+        <div class="box-wrapper">
+          <a href="" class="box box1">
+            <div class="img-wrapper">
+              <img src="./assets/Container1.png" alt="card image" />
+            </div>
+
+            <div class="content">
+              <h4>Statement from the Catalogue Coalition...</h4>
+              <p>
+                In view of Russia’s military action against the Ukrainian
+                people, being concerned about ensuring that European funds...
+              </p>
+              <div class="button-wrapper">
+                <button>
+                  <span>learnmore</span
+                  ><i class="fa-solid fa-arrow-right arrow"></i>
+                </button>
+              </div>
+            </div>
+          </a>
+          <a href="" class="box box2">
+            <div class="img-wrapper">
+              <img src="./assets/Container2.png" alt="card image" />
+            </div>
+
+            <div class="content">
+              <h4>Statement from the Catalogue Coalition...</h4>
+              <p>
+                In view of Russia’s military action against the Ukrainian
+                people, being concerned about ensuring that European funds...
+              </p>
+              <div class="button-wrapper">
+                <button>
+                  <span>learnmore</span
+                  ><i class="fa-solid fa-arrow-right arrow"></i>
+                </button>
+              </div>
+            </div>
+          </a>
+          <a href="" class="box box3">
+            <div class="img-wrapper">
+              <img src="./assets/Container3.png" alt="card image" />
+            </div>
+
+            <div class="content">
+              <h4>Statement from the Catalogue Coalition...</h4>
+              <p>
+                In view of Russia’s military action against the Ukrainian
+                people, being concerned about ensuring that European funds...
+              </p>
+              <div class="button-wrapper">
+                <button>
+                  <span>learnmore</span
+                  ><i class="fa-solid fa-arrow-right arrow"></i>
+                </button>
+              </div>
+            </div>
+          </a>
+          <a href="" class="box box4">
+            <div class="img-wrapper">
+              <img src="./assets/Container4.png" alt="card image" />
+            </div>
+
+            <div class="content">
+              <h4>Statement from the Catalogue Coalition...</h4>
+              <p>
+                In view of Russia’s military action against the Ukrainian
+                people, being concerned about ensuring that European funds...
+              </p>
+              <div class="button-wrapper">
+                <button>
+                  <span>learnmore</span
+                  ><i class="fa-solid fa-arrow-right arrow"></i>
+                </button>
+              </div>
+            </div>
+          </a>
+          <a href="" class="box box5">
+            <div class="img-wrapper">
+              <img src="./assets/Container5.png" alt="card image" />
+            </div>
+
+            <div class="content">
+              <h4>Statement from the Catalogue Coalition...</h4>
+              <p>
+                In view of Russia’s military action against the Ukrainian
+                people, being concerned about ensuring that European funds...
+              </p>
+              <div class="button-wrapper">
+                <button>
+                  <span>learnmore</span
+                  ><i class="fa-solid fa-arrow-right arrow"></i>
+                </button>
+              </div>
+            </div>
+          </a>
+          <a href="" class="box box6">
+            <div class="img-wrapper">
+              <img src="./assets/Container6.png" alt="card image" />
+            </div>
+
+            <div class="content">
+              <h4>Statement from the Catalogue Coalition...</h4>
+              <p>
+                In view of Russia’s military action against the Ukrainian
+                people, being concerned about ensuring that European funds...
+              </p>
+              <div class="button-wrapper">
+                <button>
+                  <span>learnmore</span
+                  ><i class="fa-solid fa-arrow-right arrow"></i>
+                </button>
+              </div>
+            </div>
+          </a>
+        </div>
+        <button class="button">View All News</button>
+      </div>
+    </section>
+
+    <section class="resources features">
+      <div class="container">
+        <div class="feature-content">
+          <h2>Latest Resources</h2>
+          <p>
+            The latest resources includes Transparency Toolkit, Evidence, <br />
+            Best Practices
+          </p>
+        </div>
+
+        <div class="box-wrapper">
+          <a href="" class="box box1">
+            <div class="img-wrapper">
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-wrench tools"></i>
+              </div>
+              <p>Tool</p>
+            </div>
+
+            <div class="content">
+              <h4>Defence Elvis</h4>
+              <p>
+                It allows creating networks of public spending on goods services
+                used in defense in 28 EU countries...
+              </p>
+              <div class="button-wrapper">
+                <button>
+                  <span>learnmore</span
+                  ><i class="fa-solid fa-arrow-right arrow"></i>
+                </button>
+              </div>
+            </div>
+          </a>
+          <a href="" class="box box2">
+            <div class="img-wrapper">
+              <div class="icon-wrapper">
+                <i class="fa-regular fa-file evidences"></i>
+              </div>
+              <p>Evidence</p>
+            </div>
+
+            <div class="content">
+              <h4>Defence Elvis</h4>
+              <p>
+                It allows creating networks of public spending on goods services
+                used in defense in 28 EU countries...
+              </p>
+              <div class="button-wrapper">
+                <button>
+                  <span>learnmore</span
+                  ><i class="fa-solid fa-arrow-right arrow"></i>
+                </button>
+              </div>
+            </div>
+          </a>
+          <a href="" class="box box3">
+            <div class="img-wrapper">
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-check practices"></i>
+              </div>
+              <p>Practice</p>
+            </div>
+
+            <div class="content">
+              <h4>Defence Elvis</h4>
+              <p>
+                It allows creating networks of public spending on goods services
+                used in defense in 28 EU countries...
+              </p>
+              <div class="button-wrapper">
+                <button>
+                  <span>learnmore</span
+                  ><i class="fa-solid fa-arrow-right arrow"></i>
+                </button>
+              </div>
+            </div>
+          </a>
+        </div>
+        <button class="button">View All Resources</button>
+      </div>
+    </section>
+
+    <section class="contact features">
+      <div class="container">
+        <div class="feature-content">
+          <h2>Contact Us</h2>
+          <p>
+            If you have any further inquires, please let us know by filling the
+            form below
+          </p>
+        </div>
+        <form action="#" class="form">
+          <fieldset class="name">
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="first_name" />
+          </fieldset>
+          <fieldset class="name">
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name" />
+          </fieldset>
+          <fieldset>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" />
+          </fieldset>
+          <fieldset>
+            <label for="message">Message</label>
+            <textarea name="message" id=""></textarea>
+          </fieldset>
+          <input class="button" type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="detail">
+          <div class="image-wrapper">
+            <img src="./assets/Company logo (1).png" alt="" />
+          </div>
+          <p>
+            We are a collaboration of non-government organisation and
+            professionals working to ensure that government spending.
+          </p>
+          <div class="ourlinks">
+            <a href="">
+              <div class="link-wrapper">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+            </a>
+            <a href="">
+              <div class="link-wrapper">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+            </a>
+            <a href="">
+              <div class="link-wrapper">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="links-wrapper">
+          <div class="links link">
+            <h4>Links</h4>
+            <ul>
+              <a href=""><li>Campaigns</li></a>
+              <a href=""><li>Resources</li></a>
+              <a href=""><li>News</li></a>
+              <a href=""><li>About Us</li></a>
+            </ul>
+          </div>
+          <div class="resources-link link">
+            <h4>Resources</h4>
+            <ul>
+              <a href=""><li>Transparency Toolkit</li></a>
+              <a href=""><li>Evidence</li></a>
+              <a href=""><li>Best Practices</li></a>
+            </ul>
+          </div>
+          <div class="work-with-us-link link">
+            <h4>Work With Us</h4>
+            <ul>
+              <a href=""><li>Contact Us</li></a>
+              <a href=""><li>Join Us</li></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
